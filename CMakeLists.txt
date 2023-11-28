@@ -12,6 +12,7 @@ add_executable(tests
     tests/main/test_main.cpp
     #tests/types/nullptr/test_nullptr.cpp
     tests/types/bool/test_bool.cpp
+    tests/types/char/test_char.cpp
 )
 
 find_package(GTest REQUIRED)

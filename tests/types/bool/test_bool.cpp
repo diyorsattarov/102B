@@ -3,15 +3,12 @@
 class boolTests : public ::testing::Test {
 protected:
     void SetUp() override {
-        a = true;
-        b = true;
+        a = b = true;
         c = false;
     }
     void TearDown() override {}
 
-    bool a;
-    bool b;
-    bool c;
+    bool a, b, c;
 };
 
 TEST_F(boolTests, boolComparison) {
