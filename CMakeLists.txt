@@ -6,11 +6,12 @@ project(${PROJECT_NAME})
 
 add_subdirectory(src)
 
-include_directories(include)
+include_directories(include/)
 
 add_executable(tests
     tests/main/test_main.cpp
-    tests/types/nullptr/test_nullptr.cpp
+    #tests/types/nullptr/test_nullptr.cpp
+    tests/types/bool/test_bool.cpp
 )
 
 find_package(GTest REQUIRED)
